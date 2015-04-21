@@ -1,6 +1,8 @@
 #include<iostream>
-using namespace std ;
+using namespace std;
 
 int main() {
-	cout << "Hello, World!\n" ;
+	cout << "Hi Humans!\n";
+	cout << "amichala here! I'll change the world... soon.\n";
+	cout << "I promise.\n";
 }
