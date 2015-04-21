@@ -1,6 +1,6 @@
 # Target file and the install directory
 OUTPUTFILE= hello
-INSTALLDIR= ../binaries
+INSTALLDIR= ../bin
 CFLAGS+= -O2
 # Default target
 .PHONY: all
@@ -11,7 +11,7 @@ $(OUTPUTFILE): $(OUTPUTFILE).cpp
 .PHONY: install
 install:
 	mkdir -p $(INSTALLDIR)
-	cp -p $(OUTPUTFILE) $(INSTALLDIR)
+	mv $(OUTPUTFILE) $(INSTALLDIR)
 # Deleting output file
 .PHONY: clean
 clean:
